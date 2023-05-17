@@ -31,6 +31,12 @@ To run the sentiment classification system for customer reviews, follow these st
    pip install -q findspark
    ```
 3. Download the Amazon Review Dataset (https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews) and place it in the project directory.
+   ```
+   # Download and extract the data
+   !wget https://jmcauley.ucsd.edu/data/amazon_v2/categoryFiles/Magazine_Subscriptions.json.gz --no-check-certificate
+   # !wget https://datarepo.eng.ucsd.edu/mcauley_group/data/amazon_v2/categoryFiles/All_Beauty.json.gz --no-check-certificate
+   !gzip -d Magazine_Subscriptions.json.gz
+   ```
 4. Open the config.py file and modify the configuration settings according to your setup
 5. Run the run.py file to start the sentiment classification system:
    ```
