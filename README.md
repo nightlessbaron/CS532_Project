@@ -24,7 +24,11 @@ To run the sentiment classification system for customer reviews, follow these st
    ```
 2. Ensure you have the required dependencies installed. You can install them using pip:
    ```
-   pip install -r requirements.txt
+   apt-get update
+   apt-get install openjdk-8-jdk-headless -qq > /dev/null
+   wget -q http://archive.apache.org/dist/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz
+   tar xf spark-3.3.1-bin-hadoop3.tgz
+   pip install -q findspark
    ```
 3. Download the Amazon Review Dataset (https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews) and place it in the project directory.
 4. Open the config.py file and modify the configuration settings according to your setup
